@@ -84,36 +84,52 @@
 
         /* Hero Biography Section */
         .hero-bio {
-            max-width: 1000px;
+            max-width: 1200px;
             margin: 80px auto;
             padding: 80px 40px;
-            text-align: center;
         }
 
-        .hero-bio h1 {
+        .hero-bio-container {
+            display: grid;
+            grid-template-columns: 1fr 1.5fr;
+            gap: 60px;
+            align-items: center;
+        }
+
+        .hero-image {
+            width: 100%;
+            aspect-ratio: 3/4;
+            overflow: hidden;
+            background: #f5f5f5;
+        }
+
+        .hero-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .hero-text h1 {
             font-size: 48px;
             font-weight: 300;
             letter-spacing: 4px;
             text-transform: uppercase;
-            margin-bottom: 40px;
+            margin-bottom: 20px;
         }
 
-        .hero-bio .subtitle {
+        .hero-text .subtitle {
             font-size: 18px;
             font-weight: 300;
             color: #666;
             letter-spacing: 2px;
-            margin-bottom: 60px;
+            margin-bottom: 40px;
             text-transform: uppercase;
         }
 
         .bio-content {
-            max-width: 800px;
-            margin: 0 auto;
             font-size: 16px;
             line-height: 1.8;
             color: #333;
-            text-align: left;
         }
 
         .bio-content p {
@@ -305,6 +321,15 @@
                 display: flex;
             }
 
+            .hero-bio-container {
+                grid-template-columns: 1fr;
+                gap: 40px;
+            }
+
+            .hero-text h1 {
+                font-size: 36px;
+            }
+
             .gallery-grid {
                 grid-template-columns: 1fr;
             }
@@ -320,6 +345,10 @@
             .hero {
                 padding: 0 20px;
                 margin: 40px auto;
+            }
+
+            .hero-bio {
+                padding: 40px 20px;
             }
         }
     </style>
@@ -346,50 +375,90 @@
 
     <main>
         <section class="hero-bio">
-            <h1>Arlene Carr</h1>
-            <div class="subtitle">Contemporary Abstract Artist</div>
-            <div class="bio-content">
-                <p>
-                    Arlene Carr is a contemporary abstract artist whose work explores the intersection of emotion,
-                    color, and form. Based in the heart of the creative district, her paintings are characterized
-                    by bold brushstrokes, vibrant palettes, and an intuitive approach to composition that invites
-                    viewers into a dialogue with the canvas.
-                </p>
-                <p>
-                    With over two decades of artistic practice, Carr's work has been exhibited in galleries and
-                    private collections internationally. Her artistic journey began with formal training in fine
-                    arts, but it was her personal exploration of abstract expressionism that truly defined her
-                    unique voice. Each piece she creates is a meditation on the human experience—capturing moments
-                    of joy, struggle, transformation, and transcendence.
-                </p>
-                <p>
-                    Carr's process is both disciplined and spontaneous. She works primarily with acrylics and mixed
-                    media, layering textures and colors to build depth and complexity. Her studio practice involves
-                    extended periods of experimentation, allowing the work to evolve organically. The result is a
-                    body of work that feels alive, dynamic, and deeply personal while remaining universally accessible.
-                </p>
+            <div class="hero-bio-container">
+                <div class="hero-image">
+                    <img src="images/self2.JPG" alt="Arlene Carr">
+                </div>
+                <div class="hero-text">
+                    <h1>Arlene Carr</h1>
+                    <div class="subtitle">Contemporary Abstract Artist</div>
+                    <div class="bio-content">
+                        <p>
+                            Arlene Carr is a contemporary abstract artist whose work explores the intersection of emotion,
+                            color, and form. Based in the heart of the creative district, her paintings are characterized
+                            by bold brushstrokes, vibrant palettes, and an intuitive approach to composition that invites
+                            viewers into a dialogue with the canvas.
+                        </p>
+                        <p>
+                            With over two decades of artistic practice, Carr's work has been exhibited in galleries and
+                            private collections internationally. Her artistic journey began with formal training in fine
+                            arts, but it was her personal exploration of abstract expressionism that truly defined her
+                            unique voice. Each piece she creates is a meditation on the human experience—capturing moments
+                            of joy, struggle, transformation, and transcendence.
+                        </p>
+                        <p>
+                            Carr's process is both disciplined and spontaneous. She works primarily with acrylics and mixed
+                            media, layering textures and colors to build depth and complexity. Her studio practice involves
+                            extended periods of experimentation, allowing the work to evolve organically. The result is a
+                            body of work that feels alive, dynamic, and deeply personal while remaining universally accessible.
+                        </p>
+                    </div>
+                </div>
             </div>
         </section>
 
         <section class="hero">
             <div class="gallery-grid">
                 <div class="gallery-item">
-                    <img src="https://images.unsplash.com/photo-1541961017774-22349e4a1262?w=800&h=1000&fit=crop" alt="Abstract Painting 1">
+                    <img src="images/painting1.JPG" alt="Painting 1">
                 </div>
                 <div class="gallery-item">
-                    <img src="https://images.unsplash.com/photo-1549887534-1541e9326642?w=800&h=1000&fit=crop" alt="Abstract Painting 2">
+                    <img src="images/abstractfull1.JPG" alt="Abstract Full 1">
                 </div>
                 <div class="gallery-item">
-                    <img src="https://images.unsplash.com/photo-1578926375605-eaf7559b0a4f?w=800&h=1000&fit=crop" alt="Abstract Painting 3">
+                    <img src="images/abstractfull2.JPG" alt="Abstract Full 2">
                 </div>
                 <div class="gallery-item">
-                    <img src="https://images.unsplash.com/photo-1547826039-bfc35e0f1ea8?w=800&h=1000&fit=crop" alt="Abstract Painting 4">
+                    <img src="images/abstractfull3.JPG" alt="Abstract Full 3">
                 </div>
                 <div class="gallery-item">
-                    <img src="https://images.unsplash.com/photo-1561214115-f2f134cc4912?w=800&h=1000&fit=crop" alt="Abstract Painting 5">
+                    <img src="images/full4.JPG" alt="Full 4">
                 </div>
                 <div class="gallery-item">
-                    <img src="https://images.unsplash.com/photo-1536924940846-227afb31e2a5?w=800&h=1000&fit=crop" alt="Abstract Painting 6">
+                    <img src="images/full5.JPG" alt="Full 5">
+                </div>
+                <div class="gallery-item">
+                    <img src="images/full6.JPG" alt="Full 6">
+                </div>
+                <div class="gallery-item">
+                    <img src="images/full7.JPG" alt="Full 7">
+                </div>
+                <div class="gallery-item">
+                    <img src="images/full8.JPG" alt="Full 8">
+                </div>
+                <div class="gallery-item">
+                    <img src="images/full9.JPG" alt="Full 9">
+                </div>
+                <div class="gallery-item">
+                    <img src="images/full10.JPG" alt="Full 10">
+                </div>
+                <div class="gallery-item">
+                    <img src="images/full11.JPG" alt="Full 11">
+                </div>
+                <div class="gallery-item">
+                    <img src="images/full12.JPG" alt="Full 12">
+                </div>
+                <div class="gallery-item">
+                    <img src="images/full13.JPG" alt="Full 13">
+                </div>
+                <div class="gallery-item">
+                    <img src="images/paint2.JPG" alt="Paint 2">
+                </div>
+                <div class="gallery-item">
+                    <img src="images/paint3.JPG" alt="Paint 3">
+                </div>
+                <div class="gallery-item">
+                    <img src="images/paint4.JPG" alt="Paint 4">
                 </div>
             </div>
         </section>
